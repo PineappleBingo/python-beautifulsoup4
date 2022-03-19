@@ -32,4 +32,10 @@ for product in products:
 for product in products:
     print(product.find("strong").string.strip())
 
+items = dict()
 
+for product in products:
+    url = product.find("a", href=True)
+    name = product.find("strong").string.strip()
+
+    print(url["href"], name)
