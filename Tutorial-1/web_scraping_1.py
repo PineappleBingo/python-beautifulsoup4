@@ -10,7 +10,7 @@ with open(file_path, "r") as f:
     doc = BeautifulSoup(f, "html.parser")
 
 # print html doc with foramtting
-print(doc.prettify)
+print(doc.prettify())
 
 # access element by tag name
 tag = doc.title
